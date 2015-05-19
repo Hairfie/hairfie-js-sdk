@@ -1,0 +1,24 @@
+{
+  "name": "hairfie-api",
+  "version": "0.1.0",
+  "description": "Javascript SDK for the Hairfie API",
+  "main": "client.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hairfie/hairfie-js-sdk"
+  },
+  "keywords": [
+    "API",
+    "SDK"
+  ],
+  "author": "Antoine Hérault <antoine.herault@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hairfie/hairfie-js-sdk/issues"
+  },
+  "homepage": "https://github.com/Hairfie/hairfie-js-sdk",
+  "dependencies": {
+    "es6-promise": "^2.1.1",
+    "superagent": "^1.2.0"
+  }
+}
