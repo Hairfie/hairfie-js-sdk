@@ -59,8 +59,10 @@ Client.prototype._configure = function (req, options) {
 Client.prototype._end = function (req) {
     return new Promise(function (resolve, reject) {
         req.end(function (err, res) {
-            if (res && res.ok) resolve(res.body);
-            else reject(err);
+            if (res && res.ok) {
+                var data = res.body || JSON.parse(res.text);
+                resolve(data);
+            } else reject(err);
         });
     });
 };
